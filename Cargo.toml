@@ -27,7 +27,7 @@ all-features = true
 
 [dependencies]
 # miniquad = { version = "=0.3.14", features = ["log-impl"] }
-miniquad = { git = "https://github.com/Mivik/prpr-miniquad.git", rev = "3a3a121", features = ["log-impl"] }
+miniquad = { git = "https://github.com/Mivik/prpr-miniquad.git", rev = "3dfb072", features = ["log-impl"] }
 quad-rand = "0.2.3"
 glam = {version = "0.30", features = ["scalar-math"] }
 image = { version = "0.25", default-features = false, features = ["png", "tga"] }
