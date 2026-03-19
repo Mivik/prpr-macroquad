@@ -460,6 +460,19 @@ impl Texture2D {
         }
     }
 
+    pub fn new_empty(width: u32, height: u32) -> Texture2D {
+        let texture = miniquad::Texture::new_render_texture(
+            get_quad_context(),
+            miniquad::TextureParams {
+                width,
+                height,
+                ..Default::default()
+            },
+        );
+
+        Texture2D { texture }
+    }
+
     /// Creates a Texture2D from a slice of bytes that contains an encoded image.
     ///
     /// If `format` is None, it will make an educated guess on the
